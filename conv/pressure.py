@@ -1,7 +1,7 @@
 """Pressure converting"""
 
 def mmhg2pa(mmhg):
-    pass
+    return mmhg * 133.3223684
 
 def bar2pa(bar):
     pass
