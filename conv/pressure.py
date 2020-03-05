@@ -7,4 +7,4 @@ def bar2pa(bar):
     pass
 
 def mbar2pa(mbar):
-    pass
+    return mbar * 100
