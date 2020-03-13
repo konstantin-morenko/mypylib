@@ -28,10 +28,10 @@ def p_d(t, rh, p):
     """Dry air partial pressure."""
     return p - p_u(t, rh)
 
-def rho(t, rh, p):
+def rho(t = 293.15, rh = 0.50, p = 101325):
     """Air density."""
     return p_d(t, rh, p) / (287.058 * t) + p_u(t, rh) / (461.495 * t)
 
-def sp_power(v, t, rh, p):
+def sp_power(v, t = 293.15, rh = 0.50, p = 101325):
     """Specific wind power."""
     return (rho(t, rh, p) * v ** 3) / 2
